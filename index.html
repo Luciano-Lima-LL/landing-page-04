@@ -5,25 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wagg</title>
     <style>
-        
-        button{
-            background-color: rgba(0, 255, 0, 0.993);
+         form-container {
+            text-align: center;
+            margin-bottom: 20px;
         }
+
+        button {
+            background-color: rgba(0, 255, 0, 0.993);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            letter-spacing: 2px;           
+            position: relative;
+            transition: all .35s;
+        }
+
+            button span {
+            position: relative;
+            z-index: 2;
+        }
+
+            button:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #ff003b;
+                transition: all .35s;
+                z-index: 1;
+        }
+
+            button:hover {
+                color: #fff;
+        }
+
+            button:hover:after {
+            width: 100%;
+        }
+        
+        
         table {
             display: flex;
             justify-content: center; 
+        
+        
+    }
+        body {
+        background-image: url(https://s1.1zoom.me/big0/460/Dogs_French_Bulldog_Colored_background_Glance_528929_1280x837.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+    }
+        tr {
+        background-color: rgba(0, 255, 0, 0.993)
+    }
+        a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
         }
+
 </style>
 </head>
 
 <body>
-    
+
 
             <div class="form-container">
-                <button>Wagg</button>
+              <h1>  <button>Wagg</button>
                 <button>Health & Wellness</button>
                 <button>Resources</button>
-                <button>Help center & safety</button>                
+                <button>Help center </button>   
+              </h1>             
                 <table>
                     <tr>
                         <td><label for="fname">First name:</label></td>
@@ -41,11 +113,10 @@
                         <td><label for="password">Password:</label></td>
                         <td><input type="password" id="password" name="password"></td>
                     </tr>
-                    
-                    
-                    
+                        
+                    <img src="" class="imagem-pequena" >
                    
-</section>
+
  
 
 </body>
