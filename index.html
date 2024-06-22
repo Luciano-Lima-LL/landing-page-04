@@ -5,29 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wagg</title>
     <style>
-        
         body {
-            background-image: url(https://s1.1zoom.me/big0/460/Dogs_French_Bulldog_Colored_background_Glance_528929_1280x837.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(35, 243, 87);
         }
-
-        
-        header {
-            width: 100%;
-            padding: 10px 0; 
-            text-align: center;
-            position: absolute;
-            top: 0;
-        }
-
-        
+  .imagem {
+  display: flex;
+  justify-content: center;
+}
         header button {
             background-color: rgba(229, 255, 0, 0.993);
             width: 200px;
@@ -46,9 +31,8 @@
             background-color: rgba(255, 238, 2, 0.993);
         }
 
-        
         table {
-            margin-top: 80px; 
+            margin: 0 auto; /* Centraliza a tabela horizontalmente */
             background-color: rgba(255, 238, 2, 0.993);
             padding: 20px;
             border-radius: 10px;
@@ -63,18 +47,16 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <button>HOME</button>
         <button>HEALTH&WELLNESS</button>
         <button>RESOURCES</button>
         <button>HELP CENTER</button>
-        <button>SIGN IN </button>
+        <button>SIGN IN</button>
     </header>
 
-    <h1 style="text-align:center;">SIGN UP</h1>
+    <h2 style="text-align:center;">SIGN UP</h2>
 
     <form>
         <table>
@@ -94,10 +76,25 @@
                 <td><label for="password">Password:</label></td>
                 <td><input type="password" id="password" name="password"></td>
             </tr>
-            <td colspan="2" style="text-align:center;">
-                <button type="submit" class="submit-button">Submit</button>
-        </table>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit" class="submit-button">Submit</button>
+                </td>
+            </tr>
+        </table>  
     </form>
 
+    <div>
+        <h1 style="text-align:center;">WHY WAGG?</h1>
+        <h1 style="text-align:center;">Flexibility</ul>
+        <ul><h6>Make money on your own time. Set your own schedule.Enjoy the flexibility of choosing how and when you want to work—grab a last minute ASAP walk or plan out walks weeks in advance!</h6></ul>
+        <h1 style="text-align:center;">Technology</ul>
+        <ul><h6>Wag! is a fast, friendly, and convenient platform that offers instant pay, real-time GPS tracking, automated report cards, and live chat with clients.</h6></ul>
+        <h1 style="text-align:center;">Safety</ul>
+        <ul><h6>Our dedicated 24/7 customer support team sticks by you, and services booked on the Wag! platform may be protected up to $1M property damage protection. See the customer claims policy for details.</h6></ul>
+    </div>
+    <div  class="imagem">
+    <img src="https://www.petfinder.com/sites/default/files/images/content/shelter-dog-cropped-1.jpeg">
+    </div> 
 </body>
 </html>
