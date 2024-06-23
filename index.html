@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wagg</title>
     <style>
-        body {
+        body { /*letra e cor de fundo*/
             font-family: Arial, sans-serif;
             background-color: rgb(35, 243, 87);
+            margin: 0;
+            padding: 0;
         }
-            .imagem {
-             display: flex;
-             justify-content: center;
-        }
-        img {
-            width: 1500px;
-        }
-        header button {
+
+        header button { /*fonte dos botões superiores*/
             background-color: rgba(229, 255, 0, 0.993);
             width: 230px;
             height: 40px;
@@ -24,45 +20,81 @@
             font-size: 18px;
             color: #333;
             border: 2px solid #333;
-            margin: 0 10px; 
+            margin: 0 10px;
             cursor: pointer;
         }
 
-        header button:hover {
+        header button:hover { /*passada de cor vermelha nos botões*/
             color: #ff2600;
-            background-color: rgba(255, 238, 2, 0.993);
         }
-
-        table {
-            margin: 0 auto; /* Centraliza a tabela horizontalmente */
+ 
+        table { /* Centraliza a tabela horizontalmente, tamanho e espaçamento*/
+            margin: 20px auto; 
             background-color: rgba(255, 238, 2, 0.993);
             padding: 20px;
             border-radius: 10px;
         }
 
-        table td {
-            padding: 10px;
-        }
-
-        tr {
+        tr { /* cores de dentro das palavras da tabela*/
             background-color: rgba(255, 238, 2, 0.993);
         }
-    </style>
+
+        .stats { /*divisoria do quadrado final e  1° da pagina*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #2a3a4b;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .stats div { /*divisoria de comandos dentro do quadrado final e 1° da pagina*/
+            text-align: center;
+        }
+
+        .stats div h3 { /*divisoria de comandos dentro do quadrado final 1° da pagina*/
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .stats div p { /*divisoria de comandos dentro do quadrado final da pagina*/
+            margin: 10px 0 0;
+        }
+
+        .imagem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .imagem img { 
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .imagem h1, .imagem p { /*deixar a imagem na esquerda e na direita a escrita*/
+            max-width: 600px;
+            margin: 10px 20px;
+            text-align: left;
+        }
+
+    </style> 
 </head>
 <body>
-    <header>
+    <header> 
         <button>HOME</button>
-        <button>HEALTH&WELLNESS</button>
+        <button>HEALTH & WELLNESS</button>
         <button>RESOURCES</button>
         <button>HELP CENTER</button>
         <button>SIGN IN</button>
-        
-        
     </header>
 
     <h2 style="text-align:center;">SIGN UP</h2>
 
-    <form>
+    <form> 
         <table>
             <tr>
                 <td><label for="fname">First name:</label></td>
@@ -85,30 +117,79 @@
                     <button type="submit" class="submit-button">Submit</button>
                 </td>
             </tr>
-        </table>  
+        </table>
     </form>
+    <h1 style="text-align:center;">WHY WAGG?</h1>
+    <div class="stats"> 
+        <div>
+            <h3>FLEXIBILITY</h3>
+            <p>Make money on your own time. Set your own schedule.</p>
+            <p>Enjoy the flexibility of choosing how and when you want to work—grab a last minute ASAP walk or plan out walks weeks in advance!</p>
+        </div>
+        <div>
+            <h3>SAFETY</h3>
+            <p>Our dedicated 24/7 customer support team sticks by you, and services booked on the Wag! platform may be protected up to $1M property damage protection. See the customer claims policy for details.</p>
+            <p>Making Pet Parents happy is what we do best — 99% of Wag! services result in a 5-star review.</p>
+        </div>
+        <div>
+            <h3>TECHNOLOGY</h3>
+            <p>Wag! is a fast, friendly, and convenient platform that offers instant pay, real-time </p>
+            <p>GPS tracking, automated report cards, and live chat with clients.</p>
+        </div>
+    </div>
+    </div>
 
-    <div>
-        
-        <h1 style="text-align:center;">WHY WAGG?</h1>
-        <h1 style="text-align:center;">Flexibility</ul>
-        <ul><h6>Make money on your own time. Set your own schedule.Enjoy the flexibility of choosing how and when you want to work—grab a last minute ASAP walk or plan out walks weeks in advance!</h6></ul>
-        <h1 style="text-align:center;">Technology</ul>
-        <ul><h6>Wag! is a fast, friendly, and convenient platform that offers instant pay, real-time GPS tracking, automated report cards, and live chat with clients.</h6></ul>
-        <h1 style="text-align:center;">Safety</ul>
-        <ul><h6>Our dedicated 24/7 customer support team sticks by you, and services booked on the Wag! platform may be protected up to $1M property damage protection. See the customer claims policy for details.</h6></ul>
-    </div>
-        <div  class="imagem">
-            <img src= "https://uploah.com.br/storage/posts/fICmcOuyyUYNFGK0ixcrOq2QEnof9anLXIZBwUzX.jpg">
-        <h1>"I’m getting paid to hang out with dogs, explore LA, get some sunshine, and get some exercise! It’s a really awesome gig"</h1>
-    </div> 
     <div class="imagem">
-        <img src="https://lardocelar.blog.br/wp-content/uploads/2022/02/cao_abracado.jpg">
-        <h1>“Wag! motivates me to get out and be active. Some of my favorite memories are because of Wag! and my furry friends.”</h1>
+        <img src="https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png" alt="Golden Retriever">
+        <div>
+            <h1>LOVE DOGS? GET PAID FOR IT !?</h1>
+            <h4><p>Caring for dogs is what you do best. Connecting dog walkers, sitters, and trainers with a nationwide community of pet parents who need your services is what we do best. Build your business, become your own boss with Wag!</p></h4>
+        </div>
     </div>
+
     <div class="imagem">
-        <img src="https://img.freepik.com/fotos-premium/mulher-caucasiana-atraente-beijando-cachorro-malamute-do-alasca_277459-916.jpg" alt="Imagem de cachorro">
-        <h1>“One of the things that I love about working for Wag! is that it’s literally my job to go hang out with other people’s dogs.”</h1>
+        <img src="https://uploah.com.br/storage/posts/fICmcOuyyUYNFGK0ixcrOq2QEnof9anLXIZBwUzX.jpg" alt="Dog walking in LA">
+        <div>
+            <h1>"I’m getting paid to hang out with dogs, explore LA, get some sunshine, and get some exercise! It’s a really awesome gig"</h1>
+        </div>
     </div>
+
+    <div class="imagem">
+        <img src="https://lardocelar.blog.br/wp-content/uploads/2022/02/cao_abracado.jpg" alt="Hugging a dog">
+        <div>
+            <h1>“Wag! motivates me to get out and be active. Some of my favorite memories are because of Wag! and my furry friends.”</h1>
+        </div>
+    </div>
+
+    <div class="imagem">
+        <img src="https://img.freepik.com/fotos-premium/mulher-caucasiana-atraente-beijando-cachorro-malamute-do-alasca_277459-916.jpg" alt="Woman kissing a dog">
+        <div>
+            <h1>“One of the things that I love about working for Wag! is that it’s literally my job to go hang out with other people’s dogs.”</h1>
+        </div>
+    </div>
+    <h1 style="text-align:center;">We've been around the block</h1>
+    <div class="stats"> 
+        <div>
+            <h3>150K+</h3>
+            <p>Pet Caregivers</p>
+            <p>Our community of 150,000+ Pet Caregivers nationwide are dog people, and it shows.</p>
+        </div>
+        <div>
+            <h3>4.6K+</h3>
+            <p>Cities across the U.S.</p>
+            <p>Pet Caregivers with Wag! have a trusted record of experience with over 10 million pet care services, including Sitting, Walking, Boarding & Training, across 4,600+ cities in all 50 U.S. states.</p>
+        </div>
+        <div>
+            <h3>10M+</h3>
+            <p>Meals donated</p>
+            <p>We’ve donated over 10 million meals! A portion of our proceeds from the walks you book help to feed shelter dogs in your area.</p>
+        </div>
+        <div>
+            <h3>99%</h3>
+            <p>5-star reviews</p>
+            <p>Making Pet Parents happy is what we do best — 99% of Wag! services result in a 5-star review.</p>
+        </div>
+    </div>
+    
 </body>
 </html>
